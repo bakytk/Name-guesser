@@ -1,0 +1,6 @@
+
+googledrivedownloader==0.4
+numpy==1.19.4
+requests==2.22.0
+torch==1.7.0
+torchvision==0.8.1
