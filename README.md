@@ -1,23 +1,24 @@
 
-<img src="https://i.ibb.co/3rHVxT6/resnet.png" width="500"><br><br>
+<img src="https://i.ibb.co/Q9xHgbM/rnn3.png" width="500"><br><br>
 
 **SUMMARY**<br>
 
-This is an image identification task on Pytorch built with Resnet model and served with Flask/uWSGI server
+This is an character-level RNN on Pytorch, which is trained on a corpus of names from 18 languages and tries to predict from which of them the name originates in a probabilistic fashion
 
-The code for model was taken from the Pytorch [official tutorials](https://pytorch.org/tutorials/intermediate/flask_rest_api_tutorial.html)
+The code for model was taken from the Pytorch [official tutorials](https://pytorch.org/tutorials/intermediate/char_rnn_classification_tutorial.html)
 
-Resnet is a network, where:
+In general, Recurrent neural networks, also known as RNNs, are a class of neural networks that allow previous outputs to be used as inputs while having hidden states
+
+A good summary algebra and notation can be found on this [link](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks) from a Standford Uni course 
 
 
-> "We explicitly reformulate the layers as learning residual functions with reference to the layer inputs, instead of learning unreferenced functions. We provide comprehensive empirical evidence showing that these residual networks are easier to optimize, and can gain accuracy from considerably increased depth. On the ImageNet dataset we evaluate residual nets with a depth of up to 152 layers---8x deeper than VGG nets but still having lower complexity. An ensemble of these residual nets achieves 3.57% error on the ImageNet test set. This result won the 1st place on the ILSVRC 2015 classification task. We also present analysis on CIFAR-10 with 100 and 1000 layers"
-
-More details on this paper can be found [here](https://arxiv.org/abs/1512.03385)
+<img src="https://i.ibb.co/THpR7V4/rsz.png" width="500"><br><br>
 
 <br/>
-The Vue client code is not exposed since it's trivial
 
 When installing Python dependencies, note that _torchvision_ is .8Gb, so better pull with _--no-cache-dir_ flag
+
+The model was productionized with pm2 manager on a Flask app
 
 
 ***Flask-Pytorch setup***
