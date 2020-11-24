@@ -1,5 +1,5 @@
 
-<img src="https://i.ibb.co/Q9xHgbM/rnn3.png" height="200"/><br><br>
+<img src="img/rnn4.png" height="200"/><br><br>
 
 **SUMMARY**<br>
 
@@ -12,7 +12,7 @@ In general, Recurrent neural networks, also known as RNNs, are a class of neural
 A good summary algebra and notation can be found on this [link](https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-recurrent-neural-networks) from a Standford Uni course 
 
 
-<img src="https://i.ibb.co/THpR7V4/rsz.png" height="250"/><br><br>
+<img src="img/rsz.png" height="350"/><br><br>
 
 <br/>
 
